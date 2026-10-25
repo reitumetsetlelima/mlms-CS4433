@@ -1,8 +1,6 @@
 #include <iostream>
-#include "domain/Version.h"
 
 int main() {
-    std::cout << "MLMS v" << mlms::appVersion()
-              << " (SQLite " << mlms::sqliteVersion() << ")\n";
+    std::cout << "MLMS - Moderated Learning Management System\n";
     return 0;
 }

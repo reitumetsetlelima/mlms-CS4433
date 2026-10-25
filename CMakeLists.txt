@@ -35,6 +35,7 @@ enable_testing()
 file(GLOB_RECURSE TEST_SRC CONFIGURE_DEPENDS tests/*.cpp)
 add_executable(mlms_tests ${TEST_SRC})
 target_link_libraries(mlms_tests mlms_core GTest::gtest_main)
+target_compile_definitions(mlms_tests PRIVATE MLMS_SCHEMA_PATH="${CMAKE_SOURCE_DIR}/db/schema.sql")
 
 include(GoogleTest)
 gtest_discover_tests(mlms_tests)
