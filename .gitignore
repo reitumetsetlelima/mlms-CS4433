@@ -1,0 +1,8 @@
+build/
+*.db
+*.sqlite
+*.o
+*.exe
+.vscode/
+.idea/
+uploads/
